@@ -1,0 +1,66 @@
+shopware:
+    filesystem:
+        private:
+            type: "amazon-s3"
+            config:
+                bucket: "documents"
+                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                use_path_style_endpoint: true
+                region: 'local'
+                credentials:
+                    key: '%env(MINIO_KEY)%'
+                    secret: '%env(MINIO_SECRET)%'
+                options:
+                    visibility: "private"
+        public:
+            type: "amazon-s3"
+            url: 'http://s3.localhost/media'
+            config:
+                bucket: "media"
+                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                use_path_style_endpoint: true
+                region: 'local'
+                credentials:
+                    key: '%env(MINIO_KEY)%'
+                    secret: '%env(MINIO_SECRET)%'
+                options:
+                    visibility: "public"
+        theme:
+            type: "amazon-s3"
+            url: 'http://s3.localhost/theme'
+            config:
+                bucket: "theme"
+                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                use_path_style_endpoint: true
+                region: 'local'
+                credentials:
+                    key: '%env(MINIO_KEY)%'
+                    secret: '%env(MINIO_SECRET)%'
+                options:
+                    visibility: "public"
+        asset:
+            type: "amazon-s3"
+            url: 'http://s3.localhost/asset'
+            config:
+                bucket: "asset"
+                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                use_path_style_endpoint: true
+                region: 'local'
+                credentials:
+                    key: '%env(MINIO_KEY)%'
+                    secret: '%env(MINIO_SECRET)%'
+                options:
+                    visibility: "public"
+        sitemap:
+            type: "amazon-s3"
+            url: 'http://s3.localhost/sitemap'
+            config:
+                bucket: "sitemap"
+                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                use_path_style_endpoint: true
+                region: 'local'
+                credentials:
+                    key: '%env(MINIO_KEY)%'
+                    secret: '%env(MINIO_SECRET)%'
+                options:
+                    visibility: "public"

@@ -3,6 +3,7 @@
   "type": "project",
   "require": {
     "composer-runtime-api": "^2.0",
+    "league/flysystem-async-aws-s3": "^3.30",
     "shopware/administration": "*",
     "shopware/core": "v6.7.0.1",
     "shopware/docker": "^0.3.0",
