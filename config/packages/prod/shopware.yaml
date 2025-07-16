@@ -14,7 +14,7 @@ shopware:
                     visibility: "private"
         public:
             type: "amazon-s3"
-            url: 'http://%env(MINIO_PATH)%/media'
+            url: '%env(MINIO_PATH)%/media'
             config:
                 bucket: "media"
                 endpoint: '%env(MINIO_ENDPOINT)%'
@@ -27,7 +27,7 @@ shopware:
                     visibility: "public"
         theme:
             type: "amazon-s3"
-            url: 'http://%env(MINIO_PATH)%/theme'
+            url: '%env(MINIO_PATH)%/theme'
             config:
                 bucket: "theme"
                 endpoint: '%env(MINIO_ENDPOINT)%'
@@ -40,7 +40,7 @@ shopware:
                     visibility: "public"
         asset:
             type: "amazon-s3"
-            url: 'http://%env(MINIO_PATH)%/asset'
+            url: '%env(MINIO_PATH)%/asset'
             config:
                 bucket: "asset"
                 endpoint: '%env(MINIO_ENDPOINT)%'
@@ -53,7 +53,7 @@ shopware:
                     visibility: "public"
         sitemap:
             type: "amazon-s3"
-            url: 'http://%env(MINIO_PATH)%/sitemap'
+            url: '%env(MINIO_PATH)%/sitemap'
             config:
                 bucket: "sitemap"
                 endpoint: '%env(MINIO_ENDPOINT)%'
