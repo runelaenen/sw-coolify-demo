@@ -4,7 +4,7 @@ shopware:
             type: "amazon-s3"
             config:
                 bucket: "documents"
-                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                endpoint: '%env(MINIO_ENDPOINT)%'
                 use_path_style_endpoint: true
                 region: 'local'
                 credentials:
@@ -17,7 +17,7 @@ shopware:
             url: 'http://s3.localhost/media'
             config:
                 bucket: "media"
-                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                endpoint: '%env(MINIO_ENDPOINT)%'
                 use_path_style_endpoint: true
                 region: 'local'
                 credentials:
@@ -30,7 +30,7 @@ shopware:
             url: 'http://s3.localhost/theme'
             config:
                 bucket: "theme"
-                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                endpoint: '%env(MINIO_ENDPOINT)%'
                 use_path_style_endpoint: true
                 region: 'local'
                 credentials:
@@ -43,7 +43,7 @@ shopware:
             url: 'http://s3.localhost/asset'
             config:
                 bucket: "asset"
-                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                endpoint: '%env(MINIO_ENDPOINT)%'
                 use_path_style_endpoint: true
                 region: 'local'
                 credentials:
@@ -56,7 +56,7 @@ shopware:
             url: 'http://s3.localhost/sitemap'
             config:
                 bucket: "sitemap"
-                endpoint: "'%env(MINIO_ENDPOINT)%'"
+                endpoint: '%env(MINIO_ENDPOINT)%'
                 use_path_style_endpoint: true
                 region: 'local'
                 credentials:
