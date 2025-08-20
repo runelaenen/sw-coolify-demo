@@ -6,6 +6,7 @@
     "league/flysystem-async-aws-s3": "^3.30",
     "shopware/administration": "*",
     "shopware/core": "v6.7.0.1",
+    "shopware/deployment-helper": "^0.0.27",
     "shopware/docker": "^0.3.0",
     "shopware/elasticsearch": "*",
     "shopware/storefront": "*",
